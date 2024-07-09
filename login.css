@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #062863;
+    --light-color: #fff;
+    --gray-color: #3e3d3d;
+    --faintblue-color: #083f9d;
+    --lightblue-color: #1c61d7;
+
+}
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sign-in {
+    position: relative;
+    margin-top: 4rem;
+}
+
+.logo {
+    width: 10vw;
+    margin-bottom: 2.5rem;
+    margin-left: 6rem;
+    align-items: center;
+}
+
+.sign-in-card {
+    background-color: var(--light-color);
+    width: 25vw;
+    height: 43vh;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.card-header h2 {
+    font-family: "Jost", sans-serif;
+    color: var(--faintblue-color);
+    text-align: center;
+    font-weight: 600;
+    padding-top: 2rem;
+    padding-bottom: 0.3rem;
+    font-size: 1.5rem;
+}
+
+.card-header p {
+    font-family: "Karla", sans-serif;
+    text-align: center;
+    font-weight: 300;
+    color: var(--gray-color);
+    margin-bottom: 2rem;
+    font-size: 13px;
+}
+
+.sign-in-card form {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
+form h3 {
+    font-size: 13px;
+    font-family: "Jost", sans-serif;
+    color: var(--gray-color);
+    padding-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    height: 5vh;
+    background-color: #f0f4fa;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+
+.sign-in-card button {
+    padding: 13px 9rem;
+    margin-left: 2.6rem;
+    border: none;
+    color: var(--light-color);
+    background-color: var(--lightblue-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.image {
+    position: absolute;
+}
+
+.background-image1 {
+     top: -30%;
+    left: -155%;
+    width: 15rem;
+}
+
+.background-image2 {
+    top: -10%;
+    right: -175%;
+    width: 15rem;
+}
+.background-image3 {
+    bottom: -65%;
+    left: -170%;
+    width: 15rem;
+}
+.background-image4 {
+    bottom: -60%;
+    right: -165%;
+    width: 15rem;
+}
+
+.register,
+.forgot-password {
+    display: block;
+    color: white;
+    font-family: "Karla", sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* 
+   
+
+ */
