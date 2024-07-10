@@ -18,7 +18,6 @@
 
 body {
     background-color: var(--primary-color);
-    display: flex;
     justify-content: center;
     overflow: hidden;
 }
@@ -26,6 +25,8 @@ body {
 .sign-in {
     position: relative;
     margin-top: 4rem;
+    max-width: 350px;
+    margin-inline: auto;
 }
 
 .logo {
@@ -115,24 +116,24 @@ form input:focus {
 }
 
 .background-image1 {
-     top: -30%;
-    left: -155%;
+     top: -33%;
+    left: -195%;
     width: 15rem;
 }
 
 .background-image2 {
-    top: -10%;
-    right: -175%;
+    top: -13%;
+    right: -215%;
     width: 15rem;
 }
 .background-image3 {
-    bottom: -65%;
-    left: -170%;
+    bottom: -70%;
+    left: -210%;
     width: 15rem;
 }
 .background-image4 {
-    bottom: -60%;
-    right: -165%;
+    bottom: -65%;
+    right: -205%;
     width: 15rem;
 }
 
@@ -148,9 +149,12 @@ form input:focus {
 }
 
 /* media query */
-@media (min-width: 400px) {
+@media (min-width: 400px) & (max-width: 1000px) {
     .sign-in {
-        max-width: 350px;
+        position: relative;
+        margin-top: 4rem;
+        max-width: 100vw;
+        margin-inline: auto;
     }
 
     .logo {
