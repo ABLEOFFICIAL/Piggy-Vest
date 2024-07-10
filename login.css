@@ -38,7 +38,7 @@ body {
 .sign-in-card {
     background-color: var(--light-color);
     width: 25vw;
-    height: 43vh;
+    height: 45vh;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
@@ -54,6 +54,10 @@ body {
     font-size: 1.5rem;
 }
 
+.card-header {
+    height: 30%;
+}
+
 .card-header p {
     font-family: "Karla", sans-serif;
     text-align: center;
@@ -66,6 +70,8 @@ body {
 .sign-in-card form {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
+    margin-bottom: 3rem;
+    height: 40%;
 }
 
 form h3 {
@@ -82,11 +88,20 @@ form input {
     border: none;
     border-radius: 6px;
     margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+form input:focus {
+    outline: none;
 }
 
 .sign-in-card button {
-    padding: 13px 9rem;
-    margin-left: 2.6rem;
+    padding: 1rem 9rem 2rem 9rem;
+    height: 10%;
+    text-wrap: nowrap;
+    width: 100%;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
     border: none;
     color: var(--light-color);
     background-color: var(--lightblue-color);
@@ -130,6 +145,27 @@ form input {
     margin-top: 2rem;
     font-size: 14px;
     text-decoration: none;
+}
+
+/* media query */
+@media (min-width: 400px) {
+    .sign-in {
+        max-width: 350px;
+    }
+
+    .logo {
+        width: 30vw;
+        margin-bottom: 1rem;
+        margin-left: 4rem;
+        align-items: center;
+    }
+
+    /* body {
+        background-color: var(--primary-color);
+        display: ;
+        justify-content: center;
+        overflow: hidden;
+    } */
 }
 
 /* 
