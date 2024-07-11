@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-color: rgb(242, 247, 248);
+    --white-color: #fff;
+    --dark-color: rgb(61, 79, 96);
+    --dark2-color: rgb(0, 17, 32);
+}
+
+body {
+    background-color: var(--light-color);
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+#header .flex {
+    justify-content: space-between;
+}
+
+nav .flex {
+    justify-content: space-between;
+}
+
+#header .container {
+    padding: 1.5rem 0;
+}
+
+.container nav {
+    width: 50%;
+}
+
+ul img {
+    margin-right: 10px;
+}
+
+nav ul li {
+    font-weight: 500;
+}
+
+.header-right .sign-in {
+    background-color: var(--light-color);
+    color: var(--dark2-color);
+    border: 1px solid var(--dark2-color);
+}
+
+.create-account {
+    margin-left: 10px;
+}
+
+/* section-a start */
+#section-a  {
+    position: relative;
+}
+
+#section-a .grid{
+    grid-template-columns: repeat(2, 1fr);
+    vertical-align: top;
+    gap: 3rem;
+}
+
+.bg-image {
+    width: 32rem;
+    position: relative;
+}
+
+.section-a-primary {
+    vertical-align: top;
+    width: 25rem;
+}
+
+.section-a-primary h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--dark2-color);
+}
+
+.section-a-primary p {
+    line-height: 1.7;
+    font-size: 17px;
+    width: 21rem;
+    color: var(--dark-color);
+}
+
+.section-a-primary img {
+    width: 20px;
+}
+
+.section-a-primary a {
+    padding: 16px;
+    width: rem;
+    margin-right: 15px;
+    
+}
+
+.section-a-primary a p {
+    display: inline-block;
+    vertical-align: 20%;
+    color: var(--white-color);
+    font-size: 14px;
+    padding-left: 5px;
+    width: 7rem;
+}
+
+/* .section-a-primary .btn:hover {
+    transform: translateY(10px);
+} */
+
+.section-a-secondary {
+    width: auto;
+    padding-left: 3rem;
+}
+
+.borderimage {
+    position: absolute;
+    width: 13rem;
+}
+
+.bdi1 {
+    top: 25%;
+    left: 49%;
+    width: 12rem;
+}
+.bdi2 {
+    top: 18%;
+    left: 74%;
+    width: 12rem;
+}
+.bdi3 {
+    top: 65%;
+    left: 49%;
+}
+.bdi4 {
+    top: 65%;
+    left: 73%;
+}
+.bdi5 {
+    top: 93%;
+    left: 62%;
+    width: 12rem;
+}
+/* section-a end */

@@ -1,0 +1,130 @@
+.container {
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: var(--dark2-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    border: none;
+}
+/* margin */
+.m1 {
+    margin: 1rem;
+}
+.m2 {
+    margin: 1.5rem;
+}
+.m3 {
+    margin: 2rem;
+}
+.m4 {
+    margin: 3rem;
+}
+.m5 {
+    margin: 4rem;
+}
+
+.my1 {
+    margin: 1rem 0;
+}
+.my2 {
+    margin: 1.5rem; 0;
+}
+.my3 {
+    margin: 2rem 0;
+}
+.my4 {
+    margin: 3rem 0;
+}
+.my5 {
+    margin: 5rem 0;
+}
+
+.mx1 {
+    margin: 0 1rem;
+}
+.mx2 {
+    margin: 0 1.5rem;
+}
+.mx3 {
+    margin: 0 2rem;
+}
+.mx4 {
+    margin: 0 3rem;
+}
+.mx5 {
+    margin: 0 4rem;
+}
+
+/* padding */
+.p1 {
+    padding: 1rem;
+}
+.p2 {
+    padding: 1.5rem;
+}
+.p3 {
+    padding: 2rem;
+}
+.p4 {
+    padding: 3rem;
+}
+.p5 {
+    padding: 4rem;
+}
+
+.py1 {
+    padding: 1rem 0;
+}
+.py2 {
+    padding: 1.5rem 0;
+}
+.py3 {
+    padding: 2rem 0;
+}
+.py4 {
+    padding: 3rem 0;
+}
+.py5 {
+    padding: 4rem 0;
+}
+
+.px1 {
+    margin: 0 1rem;
+}
+.px2 {
+    padding: 0 1.5rem;
+}
+.px3 {
+    padding: 0 2rem;
+}
+.px4 {
+    padding: 0 3rem;
+}
+.px5 {
+    padding: 0 4rem;
+}
