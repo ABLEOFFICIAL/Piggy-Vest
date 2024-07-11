@@ -11,12 +11,24 @@
     --white-color: #fff;
     --dark-color: rgb(61, 79, 96);
     --dark2-color: rgb(0, 17, 32);
+    --blue-color: rgb(0, 98, 255);
+    --skyblue-color: rgb(0, 153, 255);
+    --green-color: rgb(39, 199, 106);
+    --pink-color: rgb(253, 65, 190);
 }
 
 body {
     background-color: var(--light-color);
     font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+/* #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+} */
 
 #header .flex {
     justify-content: space-between;
@@ -55,6 +67,7 @@ nav ul li {
 /* section-a start */
 #section-a  {
     position: relative;
+    margin-top: 11rem;
 }
 
 #section-a .grid{
@@ -144,3 +157,221 @@ nav ul li {
     width: 12rem;
 }
 /* section-a end */
+
+/* section-b start */
+#section-b {
+    margin: 10rem 0;
+}
+
+#section-b .grid {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.section-b-text {
+    grid-column: 2 / -1;
+    line-height: 2.5;
+}
+
+.section-b-header {
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.section-b-para {
+    line-height: 2;
+    width: 42rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.section-b-link a {
+    margin-left: 5px;
+    color: var(--dark2-color);
+    font-weight: 500;
+}
+
+.section-b-link a:hover {
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+/* section-b end */
+
+
+/* section-c start */
+#section-c .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#section-c img {
+    width: 15rem;
+}
+
+.card {
+    background-color: var(--white-color);
+    padding: 30px 15px;
+    border: none;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+#section-c .container .card:nth-child(2) {
+    animation: scroll ;
+}
+
+/* .card:hover img{
+    animation: slideInLeft 1s ease-in-out;
+} */
+
+.section-c1-header {
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-c1-text {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.section-c2-header,
+.section-c3-header,
+.section-c4-header,
+.section-c5-header,
+.section-c6-header {
+    font-size: 35px;
+    margin: 1.5rem 0;
+}
+
+.section-c2-header,
+.c2-bottom,
+.c2-bottom a {
+    color: var(--blue-color);
+}
+
+.section-c3-header,
+.c3-bottom,
+.c3-bottom a {
+    color: var(--skyblue-color);
+}
+
+.section-c4-header,
+.c4-bottom,
+.c4-bottom a {
+    color: var(--green-color);
+}
+
+.section-c5-header,
+.c5-bottom,
+.c5-bottom a {
+    color: var(--pink-color);
+}
+
+.section-c2-text,
+.section-c3-text,
+.section-c4-text,
+.section-c5-text,
+.section-c6-text {
+    line-height: 1.6;
+    font-size: 20px;
+    color: var(--dark-color);
+    font-weight: 300;
+    width: 65%;
+}
+
+#section-c .container .card img {
+    position: absolute;
+    right: 4%;
+    bottom: 0%;
+    display: none;
+}
+
+#section-c .container .card:hover img {
+    display: block;
+    animation: slideInLeft 0.6s ease-in-out;
+}
+
+/* #section-c .container .card img:hover {
+    opacity: 1;
+} */
+
+.c2-bottom,
+.c3-bottom,
+.c4-bottom,
+.c5-bottom,
+.c6-bottom {
+    margin-top: 15rem;
+}
+
+#section-c .container .card:hover .section-c2-header,
+#section-c .container .card:hover i {
+    color: var(--white-color);
+}
+
+#section-c .container .card:hover .section-c3-header {
+    color: var(--white-color);
+}
+
+#section-c .container .card:hover .section-c4-header {
+    color: var(--white-color);
+}
+
+#section-c .container .card:hover .section-c5-header {
+    color: var(--white-color);
+}
+
+#section-c .container .card:hover a {
+    color: var(--white-color);
+}
+
+#section-c .container .card:hover p {
+    color: var(--white-color);
+}
+
+#section-c .container .card:nth-child(2):hover {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+#section-c .container .card:nth-child(3):hover {
+    background-color: var(--skyblue-color);
+    color: var(--white-color);
+}
+#section-c .container .card:nth-child(4):hover {
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+#section-c .container .card:nth-child(5):hover {
+    background-color: var(--pink-color);
+    color: var(--white-color);
+}
+#section-c .container .card:nth-child(6):hover {
+    background-color: var(--dark2-color);
+    color: var(--white-color);
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(200px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scroll {
+    to {
+        background-color: var(--blue-color);
+    }
+}
+
+
+/* section-c end */
+
+
+
+/* @keyframes scroll {
+    background-color{#fff}
+} */
