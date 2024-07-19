@@ -463,14 +463,15 @@ nav ul li {
 #section-d {
     overflow: hidden;
     background-color: var(--white-color);
-}
-
-#section-d .container {
-    padding: 10rem 0;
     animation-name: animateOnScroll;
     animation-timing-function: linear;
     animation-timeline: view();
     animation-range: entry 0 cover 30%;
+}
+
+#section-d .container {
+    padding: 10rem 0;
+    
 }
 
 .d-primary {
@@ -748,12 +749,20 @@ nav ul li {
 
 /* footer start */
 #footer {
+     overflow: hidden;
+    animation-name: animateOnScroll;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+
+#footer {
     margin-bottom: 8rem;
 }
 
 #footer  .container {
-    min-width: 800px;
-    border: 2px solid blue;
+    /* min-width: 800px; */
+
 }
 
 .f1 img:first-child {
@@ -769,23 +778,22 @@ nav ul li {
 .footer-top .flex {
     flex-shrink: 0;
     flex-wrap: wrap;
-    justify-content: space-between;
-    border: 2px solid green;
+    justify-content: center;
 }
 
 .f1, .f2, .f3, .f4, .f5 {
     align-self: start;
     line-height: 2;
-    /* flex-shrink: 0; */
+    flex-grow: 1;
 
 } 
 
 .f2, .f3, .f4 {
-    min-width: 6rem;
+    /* min-width: 6rem; */
 }
 
 .f5 {
-    border: 2px solid orange;
+
     text-align: right;
 }
 
@@ -813,51 +821,14 @@ nav ul li {
 
 .f5 p {
     width: 16rem;
-
-}
-
-
-
-/*
-
-#footer
-     overflow: hidden;
-    animation-name: animateOnScroll;
-    animation-timing-function: linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 30%;
 }
 
 .footer-top  {
     padding-bottom: 4rem;
     border-bottom: 1px solid var(--gray-color);
 }
-
-
-
-.f1 {
-    justify-self: flex-start;
-}
-
-
-
-
-
-*/
-
-/* 
-
-
-.flex p {
-    color: var(--dark-color);
-}
-
-
-
-
 .footer-bottom {
     padding: 2rem 0 10rem 0;
-    border: 2px solid red;
 }
 
 .footer-bottom p {
@@ -870,7 +841,7 @@ nav ul li {
 
 .footer-bottom p:nth-child(3) {
     color: var(--blue-color);
-} */
+}
 /* footer end */
 
 /* media-query */
@@ -1206,7 +1177,10 @@ nav ul li {
     #section-g .container .flex img {
         width: 7.5rem;
     }
-
+   
+    .footer-top .flex {
+        width: 100%;
+    }
     
 /* 
     #section-e .container .youtube-image img:nth-child(1) {
@@ -1315,26 +1289,18 @@ nav ul li {
 
     /* footer */
     #footer  .container {
-        margin: 1.5rem;
+        padding: 1.5rem;
     }
 
-    .footer-top {
-        border: 2px solid royalblue;
-        /* width: 100%; */
-    }
-
-    /* #footer .container {
-        /* margin: 7rem;
-    }
+     .f2, .f3, .f4, .f5 {
+       padding-right: 2rem;
+    } 
 
     .footer-top .flex {
-        flex-wrap: wrap;
-        justify-content: space-around;
+        width: 90vw;
     }
 
-
     .f5 {
-        width: 100vw;
         justify-self: start;
         text-align: left;
         margin-left: 3rem;
@@ -1343,89 +1309,6 @@ nav ul li {
     .f5 .flex {
         justify-content: start;
     }
-
-    .flex i {
-        justify-self: start;
-    } */
-
-    /* .d-secondary {
-        width: 90vw;
-        margin-inline: auto;
-    }
-
-    .f5 {
-    width: 20rem;
-    text-align: right;
-}
-
-.flex h4 {
-    color: var(--dark2-color);
-    font-weight: 400;
-}
-.flex p {
-    color: var(--dark-color);
-}
-
-
-    .d-secondary-img  {
-        margin-inline: auto;
-    
-    }
-
-    .d-secondary-img img {
-        width: 27rem;
-        margin-inline: auto;
-        margin-left: 0;
-        margin-top: 0;
-    }
-    
-    #section-d .grid {
-        grid-template-columns: 80%;
-        grid-template-rows: repeat(2, 1fr);
-    }
-    
-    .secondary-header {
-        font-size: 45px;
-        text-align: center;
-        font-weight: 600;
-        margin-bottom: 3rem;
-    }
-    
-    .secondary-text {
-        line-height: 1.7;
-        font-size: 27px;
-        text-align: center;
-        width: auto;
-        color: var(--purplewhite-color);
-        margin-bottom: 7rem;
-    }
-    
-    /* .d-secondary-text a {
-        color: var(--white-color);
-        font-weight: 500;
-        margin-left: 10px;
-    } */
-
-
-
-
-    /* .d-header {
-        padding: 1rem;
-    }
-
-   
-
-    
-
-    .d-secondary-text a {
-        display: none;
-    }
-
-    .d-secondary-img a {
-        display: block;
-    }
-
-     */
 }
 @media (min-width: 801px) and (max-width: 1200px) {
     .section-a-secondary {
@@ -1474,6 +1357,8 @@ nav ul li {
         font-size: 25px;
         margin-bottom: 27rem;
     }
+
+  
 }
 
 @media (max-width: 1300px) {
@@ -1532,8 +1417,8 @@ nav ul li {
         margin-top: 1rem;
     }
     .f1 {
-        width: 3rem;
-        margin-left: 0;
+        width: 8rem;
+        margin-left: 2rem;
         justify-content: start;
     }
 
