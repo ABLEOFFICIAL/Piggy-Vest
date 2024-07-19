@@ -81,6 +81,7 @@ nav ul li {
     overflow: hidden;
     /* position: relative; */
     margin-top: 11rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
     animation:  slideInBottom 1s ease-in;
 }
