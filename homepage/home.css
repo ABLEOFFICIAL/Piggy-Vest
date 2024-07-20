@@ -846,26 +846,18 @@ nav ul li {
 /* footer end */
 
 /* media-query */
-@media (min-width: 0px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
     /* header */
-    nav .flex li:nth-child(2),
-    nav .flex li:nth-child(3),
-    nav .flex li:nth-child(4),
-    nav .flex li:nth-child(5),
-    nav .flex li:nth-child(6) {
-        display: none;
-    }
-
+    nav .flex li:not(:first-child),
     .header-right {
         display: none;
     }
-
     .nav-icon {
         display: block;
     } 
     
     #header .container {
-        padding: 1.5rem 0;
+        padding: 1.5rem;
     }
 
     /* section a */
