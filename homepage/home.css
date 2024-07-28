@@ -18,6 +18,7 @@
     --purple-color: rgb(149, 0, 255);
     --purplewhite-color: rgb(242, 223, 255);
     --gray-color: rgba(140, 140, 140, 0.4);
+    --dropdown-hover-color: rgba(230, 238, 252, 0.4);
 }
 
 body {
@@ -74,6 +75,60 @@ nav ul li {
 .nav-icon i {
     font-size: 2rem;
     padding: 1rem;
+}
+
+/* save dropdown menu */
+.save-btn {
+    position: relative;
+}
+
+.save-btn:hover .save-dropmenu {
+    display: block;
+}
+
+.save-dropmenu {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 13%;
+    background-color: var(--white-color);
+    width: 30rem;
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+}
+
+.save-dropmenu .grid {
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.save-dropmenu a {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.save-dropmenu a:hover {
+    background-color: var(--dropdown-hover-color);
+}
+
+.menu-img {
+    width: 2.6rem;
+}
+
+.dropdown-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.menu-img-ctn {
+    padding: .5rem;
+}
+
+.menu-text {
+    padding: .5rem 0;
 }
 
 /* section-a start */
